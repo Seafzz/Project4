@@ -3,25 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%} My Booking System{% endblock %} </title>
+    <title>{% block title %} My Booking System {% endblock %}</title>
     {% load static %}
-1	<!DOCTYPE html>
-2	<html lang="en">
-3	<head>
-4	    <meta charset="UTF-8">
-5	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6	    <title>{%block title%} My Booking System{% endblock %} </title>
-7	    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!--Css link-->
-8	</head>
-9	<body>
-10	    <header>
-11	        <nav>
-12	            <ul>
-13	                <li><ahref="{% url 'home' %}">home</a></li>
-14	                <li><ahref="{% url 'booking' %}">home</a></li>
-15	                <li><ahref="{% url 'about' %}">home</a></li>
-16	            </ul>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!--Css link-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- CSS link -->
 </head>
 <body>
     <header>
@@ -37,7 +21,7 @@
     <main>
          {% block content %}
          <!-- main content goes here-->
-         {% end block %}
+         {% endblock %}
     </main>
 
     <footer>
