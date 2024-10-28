@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%} My Booking System{% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!--Css link-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><ahref="{% url 'home' %}">home</a></li>
+                <li><ahref="{% url 'booking' %}">home</a></li>
+                <li><ahref="{% url 'about' %}">home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         {% block content %}
+         <!-- main content goes here-->
+         {% end block %}
+    </main>
+
+    <footer>
+        <p>2024 My Booking System</p>
+    </footer>
+    
+</body>
+</html>
