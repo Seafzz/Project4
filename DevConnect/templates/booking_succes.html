@@ -1,0 +1,12 @@
+{% extends 'DevConnect/base.html' %}
+
+{% block title %}Booking Confirmed{% endblock %}
+
+{% block content %}
+<h2>Booking Confirmed!</h2>
+<p>Thank you, {{ name }}! Your booking for {{ number_of_guests }} guests on {{ date }} at {{ time }} has been confirmed.</p>
+{% if picture %}
+    <p>Your uploaded picture:</p>
+    <img src="{{ picture.url }}" alt="Uploaded Picture">
+{% endif %}
+{% endblock %}
