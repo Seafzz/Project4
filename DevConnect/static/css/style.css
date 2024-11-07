@@ -32,3 +32,14 @@ header nav ul {
     justify-content: center;
     gap: 1.5rem;
 }
+
+header nav a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #1f4068;
+    border-bottom: 2px solid #1f4068;
+}
