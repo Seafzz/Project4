@@ -25,3 +25,10 @@ header, footer {
 header h1, footer p {
     margin: 0.5rem 0;
 }
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
