@@ -1,8 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'DevConnect/base.html' %}
 
-{% block title %}Booking{% endblock %}
+{% block title %}Book an Appointment{% endblock %}
 
 {% block content %}
-<h1>Booking Page</h1>
-<p>This is where you can book your appointments.</p>
+<h2>Book Your Appointment</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Book Now</button>
+</form>
 {% endblock %}
