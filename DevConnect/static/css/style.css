@@ -1,23 +1,16 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #1a1a2e;  /* Dark background for modern look */
+    color: #eaeaea;  /* Light text color for readability */
+    line-height: 1.6;
 }
 
-header {
-    background-color: #f8f9fa;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
+/* Main Content Layout */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1b1b2f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
