@@ -14,3 +14,10 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+header, footer {
+    background-color: #162447;
+    color: #eaeaea;
+    padding: 1rem;
+    text-align: center;
+}
