@@ -5,9 +5,10 @@
 
 {% block content %}
 <h2>Book Your Appointment</h2>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Book Now</button>
-</form>
-{% endblock %}
+<!-- Check for errors-->
+{% if form.errors %}
+    <div class="fomr-errors"></div>
+    <p>please correct the following errors</p>
+    <ul>
+        {% for field in form %}
+    </ul>
