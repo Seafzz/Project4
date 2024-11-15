@@ -42,7 +42,8 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 header nav a {
