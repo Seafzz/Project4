@@ -9,5 +9,3 @@ def booking_view(request):
 def about(request):
     return render(request, 'devconnect/about.html')
 
-def about (request):
-    return render (request, 'devconnect/booking_sucess.html')
