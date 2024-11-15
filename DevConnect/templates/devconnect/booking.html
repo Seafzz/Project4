@@ -7,8 +7,13 @@
 <h2>Book Your Appointment</h2>
 <!-- Check for errors-->
 {% if form.errors %}
-    <div class="fomr-errors"></div>
-    <p>please correct the following errors</p>
-    <ul>
-        {% for field in form %}
-    </ul>
+    <div class="form-errors"></div>
+        <p>please correct the following errors</p>
+        <ul>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
